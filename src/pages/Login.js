@@ -1,23 +1,23 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-// strapi functions
 import loginUser from "../strapi/loginUser";
 import registerUser from "../strapi/registerUser";
-// handle user
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../context/user";
+import { react } from "react";
 export default function Login() {
-  // react router history
+  
   const history = useHistory();
-  // login user
+
   const { userLogin, showAlert, alert } = React.useContext(UserContext);
-  // input fields
+
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [username, setUsername] = React.useState("default");
   const [isMember, setIsMember] = React.useState(true);
-  // empty form fields
-  let isEmpty = !email || !password || !username || alert.show;
-  // handle member
+  
+  let isEmpty =!email || !password || !username || alert.show;
+
   const toggleMember = () => {
     setIsMember(prevMember => {
       let isMember = !prevMember;

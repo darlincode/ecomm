@@ -7,6 +7,7 @@ async function registerUser({ email, password, username }) {
       username,
       email,
       password
+      
     })
     .catch(error => console.log(error));
   return response;

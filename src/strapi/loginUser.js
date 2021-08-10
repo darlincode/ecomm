@@ -6,6 +6,7 @@ async function loginUser({ email, password }) {
     .post(`${url}/auth/local`, {
       identifier: email,
       password
+      
     })
     .catch(error => console.log(error));
   return response;

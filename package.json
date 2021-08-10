@@ -1,5 +1,5 @@
 {
-  "name": "store",
+  "name": "v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,5 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "index.js",
+  "main": "port 8080",
+  "repository": "https://github.com/john-smilga/react-e-commerce-v2.git",
+  "author": "darlincode <“nwannachukwuemekad@gmail.com”>",
+  "license": "MIT"
 }

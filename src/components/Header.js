@@ -8,12 +8,12 @@ export default function Header() {
   const { user } = React.useContext(UserContext);
   return (
     <header className="header">
-      <img src={logo} className="logo" alt="company logo" />
-      <nav>
-        <ul>
+      <img src={logo} className="logo" alt="company logo" />  
+      <nav>  
+        <ul> 
           <div>
-            <li>
-              <Link to="/">home</Link>
+            <li> 
+              <Link to="/">home</Link> 
             </li>
             <li>
               <Link to="/about">about</Link>

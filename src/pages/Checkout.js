@@ -11,12 +11,12 @@ import {
 } from "react-stripe-elements";
 import submitOrder from "../strapi/submitOrder";
 function CheckoutPage(props) {
-  // cart context
+  
   const { cart, total, clearCart } = React.useContext(CartContext);
 
   const { user, showAlert, hideAlert, alert } = React.useContext(UserContext);
   const history = useHistory();
-  // name field
+  
   const [name, setName] = React.useState("");
   const [error, setError] = React.useState("");
   // handle submit
